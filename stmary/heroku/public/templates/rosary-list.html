@@ -1,0 +1,13 @@
+
+<ion-view view-title="List of all mysteries">
+  <ion-content scroll="true" on-scroll="animate()">
+    <ion-list ng-repeat="rosary in RosaryList">
+      <ion-item type="item-text-wrap" class="item-divider">
+        <h3 class="capitalize">{{rosary.Category}}</h3>
+      </ion-item>
+      <ion-item ng-repeat="item in rosary.list" type="item-text-wrap">
+        <h3 class="capitalize">{{item.name}}</h3>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="styles/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/gospels.js"></script>
+    <script src="scripts/rosary.js"></script>
+    <script src="scripts/timings.js"></script>
+    <script src="scripts/configuration.js"></script>
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/configuration.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="starter" ng-controller="ContentController">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+    <ion-side-menus enable-menu-with-back-views="false">
+
+        <ion-side-menu-content>
+          <ion-nav-bar class="bar-calm">
+            <ion-nav-back-button class="icon  button-clear  ion-chevron-left">
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+              </button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+
+          <ion-nav-view name="menuContent"></ion-nav-view>
+
+        </ion-side-menu-content> 
+
+        <ion-side-menu side="left" class="padding-left">
+          
+          <ion-content class="ionSideMenu">
+            
+            <div class="padding center menu-left-header">
+              <div class=" padding">
+                 <img src="images/gospelIcon.png"/>
+              </div>
+              <h4 >St. Marys Catholic Church</h4>
+              <h5 >Oud Metha Street Opp. Indian High School Bur Dubai</h5>
+              <h5>Tel : +971 4 3370087 / 3358504 / 3379542 </h5>
+              
+            </div>
+            <ul class="list leftMenu">
+              <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+              <a href="#/menu/gospel" class="item " menu-close>Gospel of the day</a>
+              <a href="#/menu/novena" class="item " menu-close>Novena</a>
+              <a href="#/menu/rosary" class="item" menu-close> Pray the rosary</a>
+              <a href="#/menu/soc" class="item " menu-close>Station of the cross</a>
+              <a href="#/menu/timings" class="item " menu-close> Mass Timings</a>
+            </ul>
+          </ion-content> 
+        </ion-side-menu>
+    </ion-side-menus>
+  </body>
+</html>

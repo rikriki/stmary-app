@@ -1,0 +1,61 @@
+<ion-header-bar  class="bar-calm">
+  <div class="buttons" ng-click="previous()">
+    <button class="button" ng-click="doSomething()" ng-if="slideIndex >= 0">Previous</button>
+  </div>
+  <h1 class="title"></h1>
+  <div class="buttons align-right"  ng-click="next()">
+    <button class="button" ng-if="slideIndex<2">Next</button>
+  </div>
+</ion-header-bar>
+<ion-view hide-nav-bar="true">
+  <ion-content scrolling="false" class="center" scrollbar-y="false">
+   <ion-slide-box on-slide-changed="slideChanged(index)">
+        
+        <ion-slide class="slideStyle padding">
+            
+            <h4 class="introTitle">Thank you for downloading the St. Mary’s community App.</h4>
+            <div id="logo">
+                <img src="images/app_icon.png">
+            </div>
+            <h4 class="padding">
+                Let me introduce to you the things you can do it in this app.
+            </h4>
+          	<button class="button button-calm"  ng-click="next()"> Lets get started!</button>
+        </ion-slide>
+ 
+        <ion-slide class="slideStyle padding">
+            <h4 class="introTitle">Prayer Guide</h4>
+            <h4 class="padding">
+               Let the App guide in praying the Rosary, Novena and the Station of the cross..
+            </h4>
+            <div class="list card">
+                <img src="images/guide1.png" >
+            </div>
+           
+        </ion-slide>
+
+        <ion-slide class="slideStyle padding">
+            <h4 class="introTitle">Daily Gospel</h4>
+            <h4 class="padding">
+               Keep you aware about the word of our lord and his teachings everyday.
+            </h4>
+            <div class="list card">
+                <img src="images/guide2.png" >
+            </div>
+        </ion-slide>
+
+        <ion-slide class="slideStyle padding">
+            <h4 class="introTitle">Event Notifications</h4>
+            <h4 class="padding">
+               We will notify you about the upcoming events and mass timings around our community.
+            </h4>
+            <div class="list card">
+                <img src="images/guide2.png" >
+            </div>
+
+             <button class="button button-positive"  ng-click="startApp()"> Finished!</button>
+        </ion-slide>
+ 
+    </ion-slide-box>  
+  </ion-content>
+</ion-view>

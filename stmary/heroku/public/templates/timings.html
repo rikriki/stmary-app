@@ -1,0 +1,26 @@
+
+<ion-view view-title="Mass timings">
+  
+  <ion-content class="content-timings">
+      <div class="timing-background">
+          <img src="images/pic1.jpg" alt="" />
+          <div class="timing-cover"></div>
+      </div> 
+      <div class="content padding">
+        <h2>MASS TIMINGS</h2>
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search">
+          </label>
+        </div>
+        <ion-list type="list-inset">
+          <ion-item class="item-remove-animate item-icon-right" ng-repeat="time in timings" type="item-text-wrap" href="#/menu/timings/{{time.id}}">
+            <h3>{{time.day}}</h3>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+        </ion-list>
+      </div>  
+  </ion-content>
+</ion-view>
+

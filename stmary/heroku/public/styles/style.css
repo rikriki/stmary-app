@@ -1,0 +1,328 @@
+/* SOC */
+	.header .title h1 {
+	 	margin-bottom: 7px;
+	    font-size: 2.25em;
+}
+/* SOC*/
+
+/* Empty. Add your own CSS if you like */
+.ionProfilePic{
+	background-color: #4c5564;
+}
+.ionSideMenu,.bar-ion{
+	background:none repeat scroll 0 0 #353b47;border:none;
+}
+
+.menuLeft .item{
+	border:none;
+}
+#profile{
+  background-color: #4c5564;
+  padding: 10px 8px;
+  display:flex;
+}
+#profile img{
+  height: 75px;
+}
+.profile_details>span{
+  font-weight: bold;
+}
+
+.ionProfilePic h2,.ionProfilePic p{
+color:#f4f4f4;
+ margin: 0px 0 0px 89px;
+}
+.ionProfilePic h2{
+margin-top:15px;
+}
+
+.leftMenu .item {background:none;color:#f4f4f4;box-shadow: 0 -1px #4c5564 inset;border:none; }
+.leftMenu .item:first-child{
+	box-shadow: 0 -1px #4c5564 inset, 0 1px #4c5564 inset;
+}
+.item-icon-left .icon{
+	font-size: 24px;
+}
+.menu-left-header h4,.menu-left-header h5{
+color:#a8a8aa;
+}
+.gospel img{
+	width: 100%;
+	height: auto;
+}
+
+.textContainer {
+    top: 70%;
+    position: absolute;
+    left:20px;
+	z-index: 2;    
+}
+.textContainer *{
+	color: #fff;	
+	margin: 0px;
+
+}
+
+.gospel{
+	position: relative;
+}
+
+
+.gospel::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 101%;
+	top: 0;
+	left: 0;
+	opacity: .5;
+	pointer-events: none;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.center{
+text-align: center;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.capitalize{
+	 text-transform: capitalize;
+}
+
+/* Intro css*/
+	.slider-slide  #logo {
+	    margin: 40px 0px;
+	    
+	}
+
+	.slideStyle .introTitle{
+		margin-top: 50px;
+		font-weight: bold;
+	}
+	.slideStyle button{margin:10px 0px 30px 0px;}
+/* Intro css*/
+/* Gospel and rosary page */
+	.card.card-gospel.center {
+	    position: relative;
+	    overflow: visible;
+	    padding: 20px 0;
+	    margin: 60px 0;
+	}
+
+	.gospel-image,.rosary-image {
+	    left: 43%;
+	    position: absolute;
+	    top: -25px;
+	}
+
+
+
+	.card-gospel .title{
+	    border-bottom: 1px solid #cccccc;
+	    margin-top: 43px;
+	    padding-bottom: 18px;
+	}
+
+	.card-gospel h4{
+	margin: 36px 0 10px;
+	}
+	.item-dark h2{
+		color:rgb(204,204,204);
+	}
+
+
+	.card.card-rosary.center {
+	    position: relative;
+	    overflow: visible;
+	    padding: 20px 0px 0px;
+	    margin: 60px 0;
+	}
+
+	.card-rosary .title{
+	    border-bottom: 1px solid #cccccc;
+	    margin-top: 43px;
+	    padding-bottom: 18px;
+	    text-transform: capitalize;	
+	}
+
+	.card-rosary h4{
+		margin: 36px 0 0px;
+	}
+
+
+	.card-rosary img{
+	width: 100%;
+	height: auto;
+	}
+/* Gospel and rosary page */
+/* Timings */
+	.timing-background{
+		position: relative;
+	}
+	.timing-background img{
+		width:100%;
+		height: auto;
+	}
+
+	.timing-cover {
+	    background-color: #ffffff;
+	    height: 200px;
+	    position: absolute;
+	    transform: translateY(-82px) rotate(4deg) scaleX(1.1) scaleY(0.4);
+	    width: 100%;
+	}
+
+	.gallery {
+	    -webkit-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}	
+
+	.gallery .col.col-25 {
+	    margin: 12px;
+	}
+/* Timings */
+/* rosary details */
+	/**
+	 * Position icons into circle (SO)
+	 * http://stackoverflow.com/q/12813573/1397351 
+	 */
+	.rosary-container{
+		position: relative;overflow: hidden;
+		width: 100%;
+		height: 100px;
+	}
+	.rosary-blocker{
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		left: -168px;
+		top:-93px;
+		background-color: #fff;
+	}
+	.rosary-container .number {
+	    left: 41%;
+	    position: absolute;
+	    top: 8px;
+	}
+	.rosary{
+	 	left: -109px;
+	    position: absolute;
+	    top: -135px;
+	}
+	.rosary::before{
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 62%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    content: "";
+	    height: 60%;
+	    left: 75px;
+	    opacity: 1;
+	    position: absolute;
+	    top: 93px;
+	    width: 100%;
+	    z-index: 2;
+	}
+	.rosary::after{
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 62%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    content: "";
+	    height: 60%;
+	    left: 75px;
+	    opacity: 1;
+	    position: absolute;
+	    top: 50px;
+	    width: 100%;
+	    z-index: 2;
+	}
+	.circle-container {
+		position: relative;
+		width: 24em;
+		height: 24em;
+		border: dotted 3px black;
+		padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+		border-radius: 50%;
+		margin: 1.75em auto 0;
+		transform: rotate(0deg);
+	    transition: all 0.5s ease 0s;
+	}
+	.circle-container a {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top: 50%; left: 50%;
+		width: 2em; height: 2em;
+		margin: -1em; /* 2em = 4em/2 */ /* half the width */
+	}
+	.circle-container img { display: block; width: 100%;border-radius: 36px;}
+
+	.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+	.deg36 { transform: rotate(36deg) translate(12em) rotate(-36deg); }
+	.deg72 { transform: rotate(72deg) translate(12em) rotate(-72deg); }
+	.deg108 { transform: rotate(108deg) translate(12em) rotate(-108deg); }
+	.deg144 { transform: rotate(144deg) translate(12em) rotate(-144deg);}
+	.deg180 {transform: rotate(180deg)  translate(-12em) }
+	.deg216 { transform: rotate(216deg) translate(12em) rotate(-216deg); }
+	.deg252 { transform: rotate(252deg) translate(12em) rotate(-252deg); }
+	.deg288 { transform: rotate(288deg) translate(12em) rotate(-288deg); }
+	.deg324 { transform: rotate(324deg) translate(12em) rotate(-324deg); }
+	.deg360 { transform: rotate(360deg) translate(12em) rotate(-360deg); }
+	/* this is just for showing the angle on hover */
+	.circle-container a:not(.center):before {
+		position: absolute;
+		width: 4em;
+		color: white;
+		opacity: 0;
+		background: rgba(0,0,0,.5);
+		font: 1.25em/3.45 Courier, monospace;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-indent: -2em;
+		text-shadow: 0 0 .1em deeppink;
+		transition: .7s; /* only works in Firefox */
+		/*content: attr(class)'°';*/
+	}
+	
+
+	/* this is for showing the circle on which the images are placed */
+	.circle-container:after {
+		position: absolute;
+		top: 2.8em; left: 2.8em;
+		width: 24em; height: 24em;
+		
+		border-radius: 50%;
+		opacity: .3;
+		pointer-events: none;
+		content: '';
+	}
+	
+	.circle-container a:not(.center):after {
+		position: absolute;
+		top: 50%; left: 50%;
+		width: 4px; height: 4px;
+		border-radius: 50%;
+		box-shadow: 0 0 .5em .5em white;
+		margin: -2px;
+		
+		opacity: .3;
+		content: '';
+	}
+	.title.title-rosary{
+		margin-top: 20px;
+	}
+
+/* rosary details */
+
+/* Novena */
+	.content-timings .content .card h4{
+		margin-bottom: 20px;
+	 	border-color: #0a9ec7;
+	    border-style: solid;
+	    border-width: 1px;
+	    display: block;
+	    font-size: 16px;
+	    padding: 16px;
+	    position: relative;
+	    z-index: 2;
+	    background-color: #11c1f3;
+    	color: #fff;
+	}
+/* Novena */

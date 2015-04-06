@@ -1,0 +1,19 @@
+
+<ion-view view-title="{{mystery.Category}}" class="uppercase">
+  <ion-content scroll="true" on-scroll="animate()" class="padding">
+  	<div class="card card-rosary center" ng-repeat="item in mystery.list" ng-click="rosaryDetail()">
+        <div class="rosary-image">
+          <img src="images/gospelIcon.png" />
+        </div>
+        <h4 class="title padding">The {{item.index}} {{mystery.Category}},<br/>{{item.name}}</h4>
+        <img src="http://placehold.it/300x150" alt="" />
+    </div>
+    <div class="card">
+    	<div class="item item-icon-right item-dark" ng-click="rosaryListCLick()">
+    		<h2 class="padding item-dark">View other Mysteries</h2>
+    		<i class="icon ion-chevron-right icon-accessory "></i>
+    	</div>	
+    </div>	
+  </ion-content>
+</ion-view>
+

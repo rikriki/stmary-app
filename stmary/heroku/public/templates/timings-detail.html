@@ -1,0 +1,27 @@
+
+<ion-view >
+  <ion-content scroll="true">
+    <div class="card">
+      <div class="item item-divider"><h3>{{timings.language}} Mass</h3></div>
+      <div class="item">
+        <div class=" row  gallery ">
+  	        <div class="col col-25 card padding center" ng-repeat="time in timings.time"><h4> {{time.time}}</h4></div>
+  	    </div>
+  	  </div>    
+    </div>
+        <!--<div class="list list-inset">
+            <div class="item" ng-repeat="hour in time.time">
+               <h6>{{hour.time}}</h6> 
+            </div>
+        </div>
+        <div class="list list-inset"  >
+          <div class="item item-divider">{{timings.language}} Mass</div>  
+          <div class="item item-divider " ng-repeat="time in timings.time" >
+            <h3> {{time.time}}</h3>
+          </div>
+        </div>
+        -->
+      
+
+  </ion-content>
+</ion-view>

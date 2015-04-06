@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+<link rel="stylesheet" type="text/css" href="styles/component.css" />
+<ion-view view-title="{{gospel.Title}}" >
+   <ion-nav-title>
+{{gospel.Title}}
+    </ion-nav-title>
+  <ion-content scroll="true" on-scroll="animate()" >
+      <div id="container" class="container intro-effect-fadeout">
+      <!-- Top Navigation -->
+      <header class="header">
+        <div class="bg-img"><img src="{{gospel.image}}" alt="Background Image" /></div>
+        <div class="title">
+          <h1>{{gospel.Title}}</h1>
+          <p class="subline">{{gospel.Date}}</p>
+          </div>
+      </header>
+      <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+      <article class="content">
+          <div >{{gospel.verse}}</div> </div>
+      </article>
+
+    </div><!-- /container -->
+  </ion-content>
+</ion-view>
