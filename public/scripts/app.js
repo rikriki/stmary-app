@@ -67,12 +67,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
 
   .state('intro', {
     url: '/intro',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/intro.html',
-        controller: 'IntroCtrl'
-      }
-    }
+    templateUrl: 'templates/intro.html',
+    controller: 'IntroCtrl'
   })
   .state('menu.gospel', {
     url: '/gospel',

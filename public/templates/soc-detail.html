@@ -12,11 +12,10 @@
       <header class="header">
         <div class="bg-img"><img src="{{station.image}}" alt="Background Image" /></div>
         <div class="title">
-          <h1>{{station.title}}</h1>
-          <p class="subline">{{station.list}} : {{station.subHeading}}</p>
+          <h2>{{station.title}}</h2>
+          <!--<p class="subline">{{station.list}} : {{station.subHeading}}</p>-->
           </div>
       </header>
-      <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
       <article class="content">
           <div ng-bind-html="loadHtml()"></div> </div>
       </article>

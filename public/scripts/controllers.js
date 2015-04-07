@@ -7,11 +7,15 @@ angular.module('starter.controllers', [])
     localStorageService.set('skip', true);
     $state.go('menu.gospel');
   };
- $scope.next = function() {
+  $scope.next = function() {
     $ionicSlideBoxDelegate.next();
   };
   $scope.previous = function() {
     $ionicSlideBoxDelegate.previous();
+  };
+  $scope.skip = function() {
+    localStorageService.set('skip', true);
+    $state.go('menu.gospel');
   };
   $scope.slideChanged = function(index) {
     $scope.slideIndex = index;
@@ -175,8 +179,7 @@ angular.module('starter.controllers', [])
       classie.add( container, 'notrans' );
       classie.add( container, 'modify' );
     }
-    trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-
+   
     $scope.animate = function() {
       if(animating==false){
         animating = true;
