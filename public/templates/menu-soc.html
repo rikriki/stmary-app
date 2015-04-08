@@ -1,11 +1,21 @@
 
-<ion-view view-title="Station of the Cross">
+<ion-view>
   <ion-content scroll="true" on-scroll="animate()">
+  	<div class="timing-background">
+          <img src="images/thumb.jpg" alt="" />
+          <div class="timing-cover"></div>
+    </div> 
+  	<div class="card-content padding">
+  		<h3>Station of the Cross</h3>
+        <ion-list type="list-inset">
+          <ion-item class="item-remove-animate item-icon-right" ng-repeat="station in stations" type="item-text-wrap" href="#/menu/soc/{{station.id}}">
+	        <h4>{{station.list}}</h4>
+	        <i class="icon ion-chevron-right icon-accessory"></i>
+	      </ion-item>
+        </ion-list>
+     </div> 
     <ion-list>
-      <ion-item class="item-remove-animate item-icon-right" ng-repeat="station in stations" type="item-text-wrap" href="#/menu/soc/{{station.id}}">
-        <h3>{{station.list}}</h3>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-      </ion-item>
+      
     </ion-list>
 
   </ion-content>
