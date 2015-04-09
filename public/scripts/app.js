@@ -23,6 +23,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
   var skipIntro;
    $rootScope.$on('$stateChangeStart',
       function(event, toState, toParams, fromState) {
+        //$rootScope.showLoader = false;
         skipIntro = localStorageService.get('skip') === 'true' ? true : false;
         console.log(fromState.name +" from")
         console.log(toState.name+" to")
@@ -184,6 +185,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
       restrict:'A',
       link:function(scope,element,attrs){
          element.bind('load',function(){
+          console.log("riki")
           $rootScope.showLoader = true;
          });
       }

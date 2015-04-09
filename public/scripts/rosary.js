@@ -8,6 +8,7 @@ angular.module('starter.rosary', [])
         { 
             id:1,
             Category:"joyful mysteries",
+            image:"joyful.jpg",
             "list":
             [
               {
@@ -32,6 +33,7 @@ angular.module('starter.rosary', [])
         { 
             id:2,
             Category:"luminous mysteries",
+            image:"luminous.jpg",
             "list":
             [
               {
@@ -56,6 +58,7 @@ angular.module('starter.rosary', [])
         { 
             id:3,
             Category:"sorrowful  mysteries",
+            image:"sorrowful.jpg",
             "list":
             [
               {
@@ -79,6 +82,7 @@ angular.module('starter.rosary', [])
         },{ 
             id:4,
             Category:"glorious mysteries",
+            image:"glorious.jpg",
             "list":
             [
               {
