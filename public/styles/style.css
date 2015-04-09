@@ -403,9 +403,12 @@ text-align: center;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     padding-top: 15rem;
-    z-index: 9
+    z-index: 9;
+    transition: .7s all; /* only works in Firefox */
+	-webkit-transition: .7s all; /* only works in Firefox */
+	
 }
 .preloaderz,
 .preloaderz1 {

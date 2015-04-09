@@ -22,9 +22,10 @@ angular.module('starter.controllers', [])
     console.log($scope.slideIndex);
   };
 })
-.controller('ContentController', function($scope, $ionicSideMenuDelegate) {
+.controller('ContentController', function($scope, $ionicSideMenuDelegate,$rootScope) {
   $scope.toggleLeft = function() {
     $ionicSideMenuDelegate.toggleLeft();
+    
   };
 })
 
