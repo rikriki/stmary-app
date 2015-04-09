@@ -179,4 +179,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/intro');
 
+}).directive('imageonload',function($rootScope){
+    return{
+      restrict:'A',
+      link:function(scope,element,attrs){
+         element.bind('load',function(){
+          $rootScope.showLoader = true;
+         });
+      }
+    };
+
 });
