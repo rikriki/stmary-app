@@ -233,6 +233,15 @@ text-align: center;
 	    -webkit-transform: translateY(-82px) rotate(4deg) scaleX(1.1) scaleY(0.4);
 	    width: 100%;
 	}
+	.hour:after{
+		content:",";
+	}
+	.hour:after{
+		content:",";
+	}
+	.hour:last-child:after{
+		content:"";
+	}
 	.card-content h3{
 		position: relative;
     	z-index: 3;

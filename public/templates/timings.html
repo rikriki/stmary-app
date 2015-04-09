@@ -11,15 +11,28 @@
         <div class="list list-inset">
           <label class="item item-input">
             <i class="icon ion-search placeholder-icon"></i>
-            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Search" ng-model="searchText">
           </label>
         </div>
-        <ion-list type="list-inset">
-          <ion-item class="item-remove-animate item-icon-right" ng-repeat="time in timings" type="item-text-wrap" href="#/menu/timings/{{time.id}}">
-            <h4>{{time.day}}</h4>
-            <i class="icon ion-chevron-right icon-accessory"></i>
-          </ion-item>
-        </ion-list>
+        <div class="card padding" ng-repeat="time in timings| filter:searchText">
+          <h4 class="center item">{{time.day}}</h4>
+          <div class=" padding "><span ng-repeat="hour in time.time" class="hour"> {{hour.time}}</span> </div>
+        </div>
+        <div class="card padding">
+          <h4 class="center item"> MEET WITH A PRIEST</h4>
+          <div class=" padding ">
+            <p>Every day, priests are on hand at the parish office building for spiritual counselling and/or giving the Sacrament of Reconciliation.</p>
+
+            <p>Main languages:  English – Tagalog  –  Malayalam – Konkani – Kannada – Tamil – French – Arabic – Ukranian – Polish – Russian – Italian – Hindi – Urdu</p>
+
+            <p>Timing: Except on Fridays and Tuesdays, daily: from 8:00 am to 12:30 pm and from 4:00 pm to 8:00 pm.  </p>
+
+          </div>
+        </div>
+
+       
+
+        
       </div>  
   </ion-content>
 </ion-view>
