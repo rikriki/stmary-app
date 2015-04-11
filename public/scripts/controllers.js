@@ -36,6 +36,18 @@ angular.module('starter.controllers', [])
  $scope.openGospel = function(gospel){
   $location.path('/menu/gospel/'+ gospel);
  }
+   /*$http.get('images/1,jpg').
+          success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+            console.log("image loaded " + attrs.src);
+          }).
+          error(function(data, status, headers, config) {
+            console.log("iamge error! ");
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
+    */
 })
 .controller('GoDetailCtrl', function($scope,Gospels,$stateParams,$sce,$location) {
   $scope.gospel = Gospels.get($stateParams.GoId);
@@ -194,4 +206,18 @@ angular.module('starter.controllers', [])
 })
 .controller('TimingsDetailCtrl', function($scope,$stateParams,$sce,$location,Timings) {
   $scope.timings = Timings.get($stateParams.TimingsId);
+})
+.controller('novenaCtrl',function(){
+   $http.get('images/perpetual_help,jpg').
+          success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+            console.log("image loaded " + attrs.src);
+          }).
+          error(function(data, status, headers, config) {
+            console.log("iamge error! ");
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
+         
 })

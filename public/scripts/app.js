@@ -180,14 +180,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/intro');
 
-}).directive('imageonload',function($rootScope){
+}).directive('imageonload',function($rootScope,$http){
     return{
       restrict:'A',
       link:function(scope,element,attrs){
-         element.bind('load',function(){
+        console.log("iamge loading " + attrs.src);
+        
+         /*element.bind('load',function(){
           console.log("riki")
           $rootScope.showLoader = true;
-         });
+         });*/
+
+        $http.get(attrs.src).
+          success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+            $rootScope.showLoader = false;
+            $rootScope.showLoader = true;
+            console.log("image loaded " + attrs.src);
+          }).
+          error(function(data, status, headers, config) {
+            console.log("iamge error! ");
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
+    
       }
     };
 
