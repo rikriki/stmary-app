@@ -184,8 +184,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
     return{
       restrict:'A',
       link:function(scope,element,attrs){
-        console.log("iamge loading " + attrs.src);
+        console.log("image loading " + attrs.src);
         if($location.path() === "/menu/gospel"){
+          console.log("image location " + $location.path() );
           if($rootScope.gospel===false){
               $rootScope.showLoader = false;
               $rootScope.gospel = true;
