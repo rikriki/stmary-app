@@ -46,13 +46,13 @@ angular.module('starter.controllers', [])
     var date = new Date();
     console.log(date.getDay())
     if(date.getDay()== 0 || date.getDay()== 3){
-      $scope.mystery = Rosary.get(3);
+      $scope.mystery = Rosary.get(4);
     }else if(date.getDay()== 1 || date.getDay()== 6){
-      $scope.mystery = Rosary.get(0);
+      $scope.mystery = Rosary.get(1);
     }else if(date.getDay()== 2 || date.getDay()== 5){
       $scope.mystery = Rosary.get(3);
     }else if(date.getDay()== 4){
-      $scope.mystery = Rosary.get(1);
+      $scope.mystery = Rosary.get(2);
     }
     $scope.RosaryList = Rosary.all();
 

@@ -229,7 +229,7 @@ text-align: center;
 
 	.timing-cover {
 	    background-color: #eae6d6;
-	    height: 200px;
+	    height: 178px;
 	    position: absolute;
 	    transform: translateY(-82px) rotate(4deg) scaleX(1.1) scaleY(0.4);
 	    -webkit-transform: translateY(-82px) rotate(4deg) scaleX(1.1) scaleY(0.4);
