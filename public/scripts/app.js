@@ -118,7 +118,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
       url: '/ourFather',
       views: {
         'menuContent': {
-          templateUrl: 'templates/ourFather.html',
+          templateUrl: 'templates/ourfather.html',
           controller: 'ourFatherCtrl'
         }
       }
@@ -126,7 +126,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
       url: '/hailMary',
       views: {
         'menuContent': {
-          templateUrl: 'templates/hailMary.html',
+          templateUrl: 'templates/hailmary.html',
           controller: 'RosaryDetailCtrl'
         }
       }
