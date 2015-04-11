@@ -219,10 +219,12 @@ text-align: center;
 /* Timings */
 	.timing-background{
 		position: relative;
+		min-height: 234px;
 	}
 	.timing-background img{
 		width:100%;
 		height: auto;
+
 	}
 
 	.timing-cover {
