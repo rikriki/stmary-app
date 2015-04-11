@@ -27,6 +27,9 @@ angular.module('starter.controllers', [])
     $ionicSideMenuDelegate.toggleLeft();
     
   };
+  $rootScope.gospel = false;
+  $rootScope.novena = false;
+  $rootScope.timings = false;
 })
 
 
@@ -208,6 +211,7 @@ angular.module('starter.controllers', [])
   $scope.timings = Timings.get($stateParams.TimingsId);
 })
 .controller('novenaCtrl',function(){
+
    $http.get('images/perpetual_help,jpg').
           success(function(data, status, headers, config) {
             // this callback will be called asynchronously

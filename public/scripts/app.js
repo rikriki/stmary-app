@@ -180,31 +180,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/intro');
 
-}).directive('imageonload',function($rootScope,$http){
+}).directive('imageonload',function($rootScope,$http,$location){
     return{
       restrict:'A',
       link:function(scope,element,attrs){
         console.log("iamge loading " + attrs.src);
-        
-         /*element.bind('load',function(){
-          console.log("riki")
+        if($location.path() === "/menu/gospel"){
+          if($rootScope.gospel===false){
+              $rootScope.showLoader = false;
+              $rootScope.gospel = true;
+          }
+        }
+        if($location.path() === "/menu/timings"){
+          if($rootScope.timings===false){
+              $rootScope.showLoader = false;
+              $rootScope.timings = true;
+          }
+        }
+        if($location.path() === "/menu/novena"){
+          if($rootScope.novena===false){
+              $rootScope.showLoader = false;
+              $rootScope.novena = true;
+          }
+        }
+        element.bind('load',function(){
           $rootScope.showLoader = true;
-         });*/
-
-        $http.get(attrs.src).
-          success(function(data, status, headers, config) {
-            // this callback will be called asynchronously
-            // when the response is available
-            $rootScope.showLoader = false;
-            $rootScope.showLoader = true;
-            console.log("image loaded " + attrs.src);
-          }).
-          error(function(data, status, headers, config) {
-            console.log("iamge error! ");
-            // called asynchronously if an error occurs
-            // or server returns response with an error status.
         });
-    
       }
     };
 
