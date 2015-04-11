@@ -190,24 +190,43 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
           if($rootScope.gospel===false){
               $rootScope.showLoader = false;
               $rootScope.gospel = true;
+              loadImage( attrs.src)
           }
         }
         if($location.path() === "/menu/timings"){
           if($rootScope.timings===false){
               $rootScope.showLoader = false;
               $rootScope.timings = true;
+               loadImage( attrs.src)
           }
         }
         if($location.path() === "/menu/novena"){
           if($rootScope.novena===false){
               $rootScope.showLoader = false;
               $rootScope.novena = true;
+               loadImage( attrs.src)
           }
         }
         element.bind('load',function(){
           $rootScope.showLoader = true;
         });
+
+
+        function loadImage(image){
+          $http.get(image).
+          success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+            console.log('loading')
+            $rootScope.showLoader = true;
+          }).
+          error(function(data, status, headers, config) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+          });
+        }
       }
     };
 
 });
+
